@@ -2,13 +2,16 @@
 //  AddPurchaseViewController.swift
 //  feedAmerica
 //
+// the purpose of this controller is to allow the user to take a picture of a product and add it along with the purchase cost
+// this will then add points to their current competitions and user points
 //  Created by zach lee on 10/15/16.
 //  Copyright © 2016 Team16. All rights reserved.
 //
 
 import UIKit
-
+import CoreData
 class AddPurchaseViewController: ViewController {
+	// buttons to access camera and core data functionality
 	@IBOutlet weak var openCameraButton: UIButton!
 	@IBOutlet weak var addPictureButton: UIButton!
 	@IBOutlet weak var costLabel: UILabel!
