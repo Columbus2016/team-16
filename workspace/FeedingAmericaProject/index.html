@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feeding America Competions</title>
+    <meta name="description" content="A admin dashboard theme that will get you started with Bootstrap 4. The sidebar toggles off-canvas on smaller screens. This example also include large stat blocks, modal and cards" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body >
+    <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        ☰
+    </button>
+    <a class="navbar-brand" href="#">Feeding America Competions</a>
+    <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">My Competions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myAlert" data-toggle="collapse">Leaderboards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Achievements</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" id="main">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-item"><a class="nav-link" href="#">My Competions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Leaderboards</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+            </ul>
+        </div>
+        <!--/col-->
+
+        <div class="col-md-9 col-lg-10 main">
+
+            <h class="lead"><strong>Code For Good Feeding America Competion</strong></h>
+
+            <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>Holy guacamole!</strong> It's free.. this is an example theme.
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-inverse card-success">
+                        <div class="card-block bg-success">
+                            <h6 class="text-uppercase">My Acheviment Score</h6>
+                            <h1 class="display-4">3000</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-inverse card-danger">
+                        <div class="card-block bg-danger">
+                            <h6 class="text-uppercase">My Team Current Points</h6>
+                            <h1 class="display-4">10000</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-inverse card-info">
+                        <div class="card-block bg-info">
+                            <h6 class="text-uppercase">Leading Team Current Points</h6>
+                            <h1 class="display-4">12500</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-inverse card-warning">
+                        <div class="card-block bg-warning">
+                            <h6 class="text-uppercase">Acheviments Completed</h6>
+                            <h1 class="display-4">56</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <hr>
+
+            <div class="row placeholders">
+                <div class="col-xs-6 col-sm-3 placeholder text-xs-center">
+                    <img src="pictures/zach.jpg" width = "200" height = "200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+                    <h4>Zach</h4>
+                    <span class="text-muted">5000 pts</span>
+                </div>
+                <div class="col-xs-6 col-sm-3 placeholder text-xs-center">
+                    <img src="pictures/dan.jpg" width = "200" height ="200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+                    <h4>Dan</h4>
+                    <span class="text-muted">3450</span>
+                </div>
+                <div class="col-xs-6 col-sm-3 placeholder text-xs-center">
+                    <img src="pictures/david.jpg" width = "200" height = "200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+                    <h4>David</h4>
+                    <span class="text-muted">3000</span>
+                </div>
+                <div class="col-xs-6 col-sm-3 placeholder text-xs-center">
+                    <img src="//placehold.it/200/e0e0e0/fff?text=4" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+                    <h4>Rich</h4>
+                    <span class="text-muted">2500</span>
+                </div>
+            </div>
+
+            <a id="features"></a>
+            <hr>
+                <div class="col-lg-9 col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Score</th>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Doe</td>
+                                    <td>2400</td>
+                                    <td>5</td>
+                                    <td>IT</td>
+                                </tr>
+                                <tr>
+                                    <td>Kevin Loe</td>
+                                    <td>2350</td>
+                                    <td>6</td>
+                                    <td>HR</td>
+                                </tr>
+                                <tr>
+                                    <td>Kenny John</td>
+                                    <td>2200</td>
+                                    <td>7</td>
+                                    <td>IT</td>
+                                </tr>
+                                <tr>
+                                    <td>Sarah Hay</td>
+                                    <td>2000</td>
+                                    <td>8</td>
+                                    <td>Billing</td>
+                                </tr>
+                                <tr>
+                                    <td>Sammy Ron</td>
+                                    <td>1750</td>
+                                    <td>9</td>
+                                    <td>HR</td>
+                                </tr>
+                                <tr>
+                                    <td>Misty Knight</td>
+                                    <td>1500</td>
+                                    <td>10</td>
+                                    <td>Coustmer Service</td>
+                                </tr>
+                                <tr>
+                                    <td>Luke Cage</td>
+                                    <td>1300</td>
+                                    <td>11</td>
+                                    <td>HR</td>
+                                </tr>
+                                <tr>
+                                    <td>Charlie Day</td>
+                                    <td>1000</td>
+                                    <td>12</td>
+                                    <td>IT</td>
+                                </tr>
+                                <tr>
+                                    <td>Kevin Conroy</td>
+                                    <td>950</td>
+                                    <td>13</td>
+                                    <td>HR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+<!--/.container-->
+<footer class="container-fluid">
+    <p class="text-right small">©2015 Company</p>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+            </div>
+            <div class="modal-body">
+                This is a dashboard layout for Bootstrap 4. This is an example of the Modal component which you can use to show content. Any content can be placed inside the modal and it can use the Bootstrap grid classes.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary-outline" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--scripts loaded here-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
