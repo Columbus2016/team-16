@@ -1,6 +1,8 @@
 //
 //  AchievmentViewController.swift
 //  feedAmerica
+//  Used to control user achievements
+//
 //
 //  Created by zach lee on 10/15/16.
 //  Copyright © 2016 Team16. All rights reserved.
