@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// hard data
 let Comp1 = Competition(tL: ["purple","green","red"], ptGoal: 100, Comp_Name: "Fight Hunger")
 let Comp2 = Competition(tL: ["one","two","three"], ptGoal: 1500, Comp_Name: "Yes Fight")
 let Comp3 = Competition(tL: ["Sales","Marketing","Human Resources"], ptGoal: 25000, Comp_Name: "Love for Children")
@@ -15,9 +15,7 @@ let Comp4 = Competition(tL: ["Manchester","Madrid","Liverpool"], ptGoal: 100, Co
 let Comp5 = Competition(tL: ["Lakers","Jazz","Kings"], ptGoal: 100, Comp_Name: "NBA For Hunger")
 
 let user = User(fn: "John", ln: "Smith", e: "JohnSmith@Gmail.com", comp: [Comp1, Comp2, Comp3, Comp4, Comp5], upts: 100 )
-
-
-
+ 
 class User {
 	
 	var first_name: String? = ""
@@ -36,11 +34,7 @@ class User {
 		
 		
 	}
-	
-	
-	
-	
-	
+
 	
 	func setFirstName(firstName: String?) -> Void {
 		self.first_name = first_name!
@@ -82,7 +76,7 @@ class User {
 	
 
 }
-
+//
 class Team {
 	var team_ID: String? = ""
 	var user_ID_list: Array<String>?
