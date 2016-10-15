@@ -9,6 +9,9 @@
 import UIKit
 
 class AchievmentViewController: ViewController {
+	@IBOutlet weak var CompsCompLabel: UILabel!
+	@IBOutlet weak var totalPointsLabel: UILabel!
+	@IBOutlet weak var achievmentsLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

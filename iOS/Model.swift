@@ -8,20 +8,39 @@
 
 import UIKit
 
+let Comp1 = Competition(tL: ["purple","green","red"], ptGoal: 100, Comp_Name: "Fight Hunger")
+let Comp2 = Competition(tL: ["one","two","three"], ptGoal: 1500, Comp_Name: "Yes Fight")
+let Comp3 = Competition(tL: ["Sales","Marketing","Human Resources"], ptGoal: 25000, Comp_Name: "Love for Children")
+let Comp4 = Competition(tL: ["Manchester","Madrid","Liverpool"], ptGoal: 100, Comp_Name: "FIFA")
+let Comp5 = Competition(tL: ["Lakers","Jazz","Kings"], ptGoal: 100, Comp_Name: "NBA For Hunger")
+
+let user = User(fn: "John", ln: "Smith", e: "JohnSmith@Gmail.com", comp: [Comp1, Comp2, Comp3, Comp4, Comp5], upts: 100 )
+
+
+
 class User {
 	
 	var first_name: String? = ""
 	var last_name: String? = ""
 	var email: String? = ""
-	var user_photo: UIImage?
-	var competitions: Array<Competition>?
+	//var user_photo: UIImage?
+	var competitions: [Competition]? = []
 	var user_pts: Int = 0
 	
-	init() {
-		
+	init(fn: String?, ln: String?, e: String?, comp: [Competition]?, upts: Int? ) {
+		self.first_name = fn!
+		self.last_name = ln!
+		self.email = e!
+		self.competitions = comp!
+		self.user_pts = upts!
 		
 		
 	}
+	
+	
+	
+	
+	
 	
 	func setFirstName(firstName: String?) -> Void {
 		self.first_name = first_name!
@@ -32,9 +51,9 @@ class User {
 	func setEmail(newEmail: String?) -> Void {
 		self.email = newEmail!
 	}
-	func setUserPhoto(new_photo: UIImage?) -> Void {
-		self.user_photo = new_photo!
-	}
+//	func setUserPhoto(new_photo: UIImage?) -> Void {
+//		self.user_photo = new_photo!
+//	}
 	func addCompetitions(newComp: Competition?) -> Void {
 		self.competitions?.append(newComp!)
 	}
@@ -50,9 +69,9 @@ class User {
 	func getEmail() -> String {
 		return email!
 	}
-	func getUserPhoto() -> UIImage {
-		return user_photo!
-	}
+//	func getUserPhoto() -> UIImage {
+//		return user_photo!
+//	}
 	func getCompetition() -> Array<Competition> {
 		return competitions!
 	}
@@ -71,7 +90,7 @@ class Team {
 	var team_pts: Int? = 0
 	
 	init() {
-		<#statements#>
+		
 	}
 	func getTeamID() -> String{
 		return team_ID!
@@ -102,14 +121,17 @@ class Team {
 }
 
 class Competition {
-	var teamList: Array<Team>? = []
+	var teamList: [String?] = []
 	var goal: Int?
 	var comp_name: String?
 	
-	init(tL: Array<Team>, ptGoal: Int, Comp_Name: String) {
+	init(tL: Array<String>, ptGoal: Int, Comp_Name: String) {
 		teamList = tL
 		goal = ptGoal
 		comp_name = Comp_Name
+	}
+	func getName()-> String{
+		return comp_name!
 	}
 	
 	

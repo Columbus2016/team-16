@@ -9,6 +9,10 @@
 import UIKit
 
 class DetailCompetitionViewController: ViewController {
+	@IBOutlet weak var PointGoalLabel: UILabel!
+	@IBOutlet weak var TeamPtTotalLabel: UILabel!
+	@IBOutlet weak var RankLabel: UILabel!
+	@IBOutlet weak var CountDownLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

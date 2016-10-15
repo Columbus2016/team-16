@@ -9,9 +9,14 @@
 import UIKit
 
 class AddPurchaseViewController: ViewController {
+	@IBOutlet weak var openCameraButton: UIButton!
+	@IBOutlet weak var addPictureButton: UIButton!
+	@IBOutlet weak var costLabel: UILabel!
+	@IBOutlet weak var addPointsButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
 
         // Do any additional setup after loading the view.
     }

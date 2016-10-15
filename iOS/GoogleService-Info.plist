@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>386239940035-g3m7t0vbqvig440idvqnelf87t9qb1t0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.386239940035-g3m7t0vbqvig440idvqnelf87t9qb1t0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCP_ylc37qfAnLbKWg2PfarAsOtHRp75bc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>386239940035</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>feedAmerica</string>
+	<key>PROJECT_ID</key>
+	<string>feed-america</string>
+	<key>STORAGE_BUCKET</key>
+	<string>feed-america.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:386239940035:ios:5ca3ba7074e2c4ab</string>
+	<key>DATABASE_URL</key>
+	<string>https://feed-america.firebaseio.com</string>
+</dict>
+</plist>
